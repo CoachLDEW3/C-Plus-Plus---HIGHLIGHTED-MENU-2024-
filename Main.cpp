@@ -4,8 +4,8 @@ Date:	    11.18.2024
 Purpose:    This program demonstrates a highlighted menu that cycles through the menu options using
             the arrow keys to move through the options            
 *************************************************************************************************/
-#include <iostream>			//This library contains standard input and output processes
-#include <Windows.h>		//This library contains the function to control the cursor position
+#include <iostream>	    //This library contains standard input and output processes
+#include <Windows.h>	    //This library contains the function to control the cursor position
 #include <conio.h>          //Provides basic console input/output functions
 #include <chrono>           //This library provides a collection of types and functions to work with time
 #include <thread>           //This library provides functions that access the current thread of execution
@@ -164,7 +164,6 @@ void ConstructConsole(int width, int height, int fontW, int fontH, string fontNa
     LPCWSTR wideStringTitleName = tempTitle.c_str();
 
     //Places a title in the Title Bar;
-    //SetConsoleTitle(L"Constuct Console");
     SetConsoleTitle(wideStringTitleName);
 
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
