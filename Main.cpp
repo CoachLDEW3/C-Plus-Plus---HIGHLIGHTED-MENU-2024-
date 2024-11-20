@@ -51,6 +51,7 @@ int main()
 
     while (!gameOver)
     {
+	SetConsoleColor(7, 0);
         DrawBorders(0, 0, 40, 20);
         //Menu Items
         GoToXY(17, 2);
